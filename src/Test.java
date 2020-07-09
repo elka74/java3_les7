@@ -7,4 +7,6 @@ import java.lang.annotation.Target;
 @Target(ElementType.METHOD)
 
 public @interface Test {
+   String description () default ("Без описания");
+    int time () default -1;
 }
